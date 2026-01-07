@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hanami Heaven - Clone</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0; font-family: 'Montserrat', sans-serif; background: #fcf7f7; color: #222;
+    }
+    header {
+      background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.04); padding: 30px 0 20px 0; text-align: center;
+    }
+    nav a {
+      color: #d67b98; text-decoration: none; margin: 0 20px; font-weight: bold; font-size: 18px;
+    }
+    nav a:hover { text-decoration: underline; }
+    .hero {
+      background: url('https://hanamiheaven.org/images/background.jpg') center/cover no-repeat;
+      min-height: 450px;
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; text-shadow: 1px 1px 8px #d67b98;
+      flex-direction: column;
+    }
+    .hero h1 { font-size: 48px; margin-bottom: 10px; }
+    .hero p { font-size: 24px; }
+    section {
+      max-width: 780px; margin: 40px auto; padding: 0 16px;
+    }
+    h2 { color: #d67b98; margin-top: 0; }
+    .gallery {
+      display: flex; flex-wrap: wrap; gap: 16px;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 230px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+      object-fit: cover;
+    }
+    footer {
+      text-align: center; padding: 30px 0; background: #fff;
+      color: #d67b98;
+    }
+    @media (max-width:600px) {
+      .hero h1 { font-size: 32px;}
+      nav a { font-size: 16px;}
+      .gallery img { width:100%; max-width:220px;}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+<div class="hero">
+  <h1>Hanami Heaven</h1>
+  <p>Celebrating the beauty of cherry blossoms</p>
+</div>
+
+<section id="about">
+  <h2>About Hanami Heaven</h2>
+  <p>Hanami Heaven is a project dedicated to sharing the beauty and tradition of cherry blossom viewing in Japan and around the world. Join us in celebrating nature's fleeting masterpiece!</p>
+</section>
+
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Sakura">
+    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Cherry Blossom">
+    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Bloom">
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Want to get in touch? Email us at <a href="mailto:info@hanamiheaven.org">info@hanamiheaven.org</a></p>
+</section>
+
+<footer>
+  &copy; 2024 Hanami Heaven. All rights reserved.
+</footer>
+</body>
+</html>
